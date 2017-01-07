@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>KAIJU membership</title>
+<style type="text/css">
+  html {
+    background-color: #EEEEEE;
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #262626;
+    font-family: Georgia, serif;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-family: 'helvetica nueue', 'arial', sans-serif;
+    margin: 20px 0;
+    color: #191919;
+    letter-spacing: 5px;
+  }
+
+  .haiku {
+    width: 250px;
+    height: 100px;
+    margin: 40px auto;
+    text-align: left;
+    background-color: #F4F4F4;
+    padding: 25px;
+    border: 1px solid #AAAAAA;
+    border-radius: 6px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-family: 'helvetica nueue', 'arial', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1.2px;
+    margin: 0 0 20px 0; 
+    color: #333333; 
+  }
+
+  h4 a {
+    color: #da552f;
+  }
+
+  .footer {
+    margin: 20px auto 30px auto;
+    font-family: 'helvetica nueue', 'arial', sans-serif;
+    font-size: 16px;
+    width: 700px;
+    color: #AAAAAA;
+  }
+
+  .footer a {
+    color: #009999;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>A KAIJU HAIKU</h1>
+  <div class="haiku">
+    <h4>
+      Kaiju means "monster"<br/>
+      But unlike Godzilla, we<br/>
+      Come in peace, to help.
+    </h4>
+  </div>
+  <form action="https://kaiju-group.herokuapp.com/" method="POST">
+      <script
+          src="https://checkout.stripe.com/checkout.js"
+          class="stripe-button"
+          data-key="pk_8GqgiaDnYbb7WBHZaHi1DnWzfHaZI"
+          data-name="Kaiju"
+          data-description="Monthly membership subscription"
+          data-amount="10000"
+          data-zip-code="true"
+          data-locale="auto"
+      ></script>
+      <input name="amount" value="10000" type="hidden">
+      <input name="description" value="Monthly membership subscription" type="hidden">
+  </form>
+
+  <div class="footer">
+  </div>
+
+  <script type="text/javascript">
+  </script>
+</body>
+</html>
+
